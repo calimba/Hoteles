@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_one_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="#fcfcfc"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/rl_hoteles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout android:id="@+id/rl_txt_hotel"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_hotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/hotel"/>
+
+                    <TextView android:id="@+id/txt_hotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoteles"
+                        android:layout_toRightOf="@+id/img_hotel"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:id="@+id/rl_txt_vuelos"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_vuelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/airplane"/>
+
+                    <TextView android:id="@+id/txt_vuelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vuelos"
+                        android:layout_toRightOf="@+id/img_vuelos"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/rl_ofertas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout android:id="@+id/rl_txt_ofertas"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_ofertas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@mipmap/paquetes2"/>
+
+                    <TextView android:id="@+id/txt_ofertas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ofertas de\n paquete"
+                        android:layout_toRightOf="@+id/img_ofertas"
+                        android:layout_toEndOf="@+id/img_ofertas"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/rl_txt_autos"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_autos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/car"/>
+
+                    <TextView android:id="@+id/txt_autos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autos"
+                        android:layout_toRightOf="@+id/img_autos"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/rl_actividades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout android:id="@+id/rl_txt_actividades"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_actividades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@mipmap/beach"/>
+
+                    <TextView android:id="@+id/txt_actividades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/actividades"
+                        android:layout_toRightOf="@+id/img_actividades"
+                        android:layout_toEndOf="@+id/img_actividades"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/rl_txt_cruceros"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView android:id="@+id/img_cruceros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/cruise"/>
+
+                    <TextView android:id="@+id/txt_cruceros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cruceros"
+                        android:layout_toRightOf="@+id/img_cruceros"
+                        android:layout_toEndOf="@+id/img_cruceros"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_one_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout android:id="@+id/xeler_configuracion_linear_configuracion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_local_offer_black_24"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/xeler_confg_rl_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:id="@+id/textosocios"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:layout_centerInParent="true"
+                        android:text="¡Compra como socio en hoteles!"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:id="@+id/xeler_confg_lbl_correo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Puedes ahorrar mas en miles de hoteles\n seleccionados"
+                        android:layout_centerInParent="true"
+                        android:padding="6dp"
+                        android:textSize="12sp"/>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#696969"/>
+
+                <RelativeLayout
+                    android:id="@+id/socios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="20dp"
+                        android:text="Iniciar sesión o crear una cuenta" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/txt_inspirate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_2"
+        android:text="Inspírate"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <RelativeLayout android:id="@+id/rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_inspirate">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_one_login3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:id="@+id/imageView"
+                    android:background="@mipmap/hbr2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView"
+                    android:text="Ofertas de 24 horas"
+                    android:textSize="28sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/textView2"
+                    android:layout_alignLeft="@id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_alignRight="@id/textView2"
+                    android:layout_alignEnd="@+id/textView2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:text="Ahorra un 40% o más en hoteles seleccionados. Las\n ofertas cambian todos los días a la medianoche."
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_alignBottom="@id/imageView"
+                    android:layout_alignLeft="@id/imageView"
+                    android:layout_alignStart="@+id/imageView"
+                    android:layout_alignRight="@id/imageView"
+                    android:layout_alignEnd="@+id/imageView"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rl_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_3">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_one_login4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:id="@+id/img_ultima_hora"
+                    android:background="@mipmap/alcatraz" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_ultima_hora_2"
+                    android:background="@mipmap/clock"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_ultima_hora"
+                    android:text="Ofertas de última hora"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/txt_ultima_hora2"
+                    android:layout_alignLeft="@id/txt_ultima_hora2"
+                    android:layout_alignStart="@+id/txt_ultima_hora2"
+                    android:layout_alignRight="@id/txt_ultima_hora2"
+                    android:layout_alignEnd="@+id/txt_ultima_hora2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ultima_hora2"
+                    android:text="¿Buscas una escapada? Ver ofertas aquí."
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_alignBottom="@id/img_ultima_hora"
+                    android:layout_alignLeft="@id/img_ultima_hora"
+                    android:layout_alignStart="@+id/img_ultima_hora"
+                    android:layout_alignRight="@id/img_ultima_hora"
+                    android:layout_alignEnd="@+id/img_ultima_hora"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

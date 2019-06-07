@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hoteles</string>
+    <string name="title_activity_principal">Hoteles</string>
+    <string name="title_home">Buscar hoteles</string>
+    <string name="title_dashboard">Hoteles</string>
+    <string name="title_notifications">Cuenta</string>
+    <string name="cruceros">Cruceros</string>
+    <string name="actividades">Actividades</string>
+</resources>
